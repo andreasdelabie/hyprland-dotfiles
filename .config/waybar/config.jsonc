@@ -1,0 +1,31 @@
+{
+        "layer": "bottom",
+        "modules-left": ["hyprland/workspaces", "hyprland/mode"],
+        "modules-center": ["hyprland/window"],
+        "modules-right": ["cpu", "memory", "network", "pulseaudio", "clock"],
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"format": "{icon}",
+		"format-icons": {
+			"1": "1",
+			"2": "2",
+			"3": "3",
+			"4": "4",
+		},
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+		},
+	},
+	"cpu": {
+		"format": "CPU: {usage}%",
+	},
+	"memory": {
+		"format": "MEM: {percentage}%",
+	},
+        "clock": {
+		"format-alt": "{:%d/%m/%Y}",
+        },
+ }

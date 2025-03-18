@@ -1,0 +1,33 @@
+#window {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#input {
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#input:focus {
+  border: 1px solid rgba(255, 0, 255, 0.75);
+}
+
+#inner-box {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(23, 20, 33, 0.9);
+}
+
+#text {
+   color: #d0cfcc;
+}
+
+#entry:selected {
+  border-radius: 5px;
+  background-color: rgba(255, 0, 255, 0.75);
+}
+
+#expander-box {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(23, 20, 33, 1);
+}
