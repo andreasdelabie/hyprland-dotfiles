@@ -15,8 +15,12 @@ cp -r ./.config/hypr/ /home/$USER/.config/
 cp -r ./.config/wofi /home/$USER/.config/
 cp -r ./.config/waybar /home/$USER/.config/
 
+echo "[COPYING BACKGROUNDS...]"
+mkdir -p /usr/share/backgrounds/
+cp -r ./usr/share/backgrounds /usr/share/backgrounds
+
 echo "[FINISHING INSTALL...]"
 sudo systemctl enable ly.service
 pulseaudio -D
 
-echo "[FINISHED INSTALLING!]
+echo "[FINISHED INSTALLING!]"
