@@ -24,7 +24,8 @@
 ################
 
 # See https://wiki.hyprland.org/Configuring/Monitors/
-monitor=,preferred,auto,1
+monitor=,1920x1440@60.00Hz
+,auto,1
 
 
 ###################
@@ -49,9 +50,8 @@ $menu = wofi --show drun
 # exec-once = $terminal
 # exec-once = nm-applet &
 # exec-once = waybar & hyprpaper & firefox
+exec-once = /usr/share/backgrounds/load-background.sh
 exec-once = waybar
-exec = .config/hypr/scripts/load-background.sh
-
 
 
 #############################
@@ -224,7 +224,6 @@ bind = $mainMod, V, togglefloating,
 bind = $mainMod, R, exec, $menu
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
-bind = $mainMod SHIFT, B, exec, $HOME/.config/hypr/scripts/load-background.sh
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, movefocus, l
