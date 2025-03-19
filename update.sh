@@ -13,7 +13,8 @@ cp -ru /usr/share/backgrounds ./usr/share/
 # ------------------------------
 #         PUSH TO GITHUB
 # ------------------------------
-git add -A
+git diff
 read -p "Enter commit message: " message
+git add -A
 git commit -m "$message"
 git push
