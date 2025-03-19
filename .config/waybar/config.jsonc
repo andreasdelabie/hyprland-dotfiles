@@ -25,7 +25,11 @@
 	"memory": {
 		"format": "MEM: {percentage}%",
 	},
+	"network": {
+		"format": "{ipaddr}"
+	},
         "clock": {
 		"format-alt": "{:%d/%m/%Y}",
+		"tooltip": false
         },
  }

@@ -1,0 +1,41 @@
+@import url("file:///etc/xdg/waybar/style.css");
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+label.module {
+  margin: 5px;
+  border: 2px solid rgba(255, 0, 255, 0.7);
+  border-radius: 10px;
+}
+
+.module#workspaces button {
+  padding: 0;
+}
+
+.module#cpu {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module#memory {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module#network {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module#pulseaudio {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module#clock {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
