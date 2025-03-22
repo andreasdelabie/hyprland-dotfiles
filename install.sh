@@ -7,7 +7,9 @@ ANDREAS' WAYLAND DOTFILES
 sleep 2s
 
 echo "[INSTALLING PACKAGES...]"
-sudo pacman -S ly hyprland waybar wofi gnome-terminal otf-font-awesome
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ..
+sudo pacman -S ly hyprland waybar wofi gnome-terminal otf-font-awesome, pacman-contrib, fakeroot
+yay -S trizen
 
 echo "[COPYING DOT FILES...]"
 mkdir -p $HOME/.config/

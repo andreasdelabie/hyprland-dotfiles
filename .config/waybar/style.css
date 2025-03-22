@@ -11,21 +11,43 @@ label.module {
   border-radius: 10px;
 }
 
-.module#workspaces button {
+#workspaces button {
   padding: 0;
 }
 
-.module#cpu {
+#custom-updates {
+  padding: 0 8px 0 8px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.module#memory {
+#custom-updates.green {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#custom-updates.yellow {
+  color: rgb(64, 56, 16);
+  background-color: rgba(255, 223, 64, 0.9);
+  border: none;
+}
+
+#custom-updates.red {
+  color: rgb(64, 16, 16);
+  background-color: rgba(255, 64, 64, 0.9);
+  border: none;
+}
+
+#cpu {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.module#network {
+#memory {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#network {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -35,7 +57,7 @@ label.module {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.module#clock {
+#clock {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
 }

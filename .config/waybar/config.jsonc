@@ -1,8 +1,11 @@
 {
-        "layer": "bottom",
+	// Waybar config
+        "layer": "top",
         "modules-left": ["hyprland/workspaces", "hyprland/mode"],
         "modules-center": ["hyprland/window"],
-        "modules-right": ["cpu", "memory", "network", "pulseaudio", "clock"],
+        "modules-right": ["custom/updates", "cpu", "memory", "network", "pulseaudio", "clock"],
+	
+	// Modules config
 	"hyprland/workspaces": {
 		"all-outputs": true,
 		"format": "{icon}",
@@ -19,14 +22,29 @@
 			"4": [],
 		},
 	},
+	"custom/updates": {
+		"format": " {}",
+		"escape": true,
+		"return-type": "json",
+		"exec": "~/.config/waybar/updates.sh",
+		"restart-interval": 60,
+		"on-click": "gnome-terminal -- ~/.config/waybar/install-updates.sh",
+	},
 	"cpu": {
-		"format": "CPU: {usage}%",
+		"format": " {usage}%",
 	},
 	"memory": {
-		"format": "MEM: {percentage}%",
+		"format": " {percentage}%",
 	},
 	"network": {
-		"format": "{ipaddr}"
+		"format": " {ipaddr}",
+	},
+	"pulseaudio": {
+		"format": "{icon}{volume}%",
+		"format-muted": " {volume}%",
+		"format-icons": {
+			"default": [" ", " ", " "],
+		},
 	},
         "clock": {
 		"format-alt": "{:%d/%m/%Y}",
