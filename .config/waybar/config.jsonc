@@ -26,9 +26,9 @@
 		"format": " {}",
 		"escape": true,
 		"return-type": "json",
-		"exec": "~/.config/waybar/updates.sh",
+		"exec": "~/.config/waybar/scripts/updates.sh",
 		"restart-interval": 60,
-		"on-click": "gnome-terminal -- ~/.config/waybar/install-updates.sh",
+		"on-click": "gnome-terminal -- ~/.config/waybar/scripts/install-updates.sh",
 	},
 	"cpu": {
 		"format": " {usage}%",

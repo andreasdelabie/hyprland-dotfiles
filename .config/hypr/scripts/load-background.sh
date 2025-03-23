@@ -6,3 +6,6 @@ WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALLPAPE
 systemctl --user enable --now hyprpaper.service
 sleep 0.5s
 hyprctl hyprpaper reload ,"$WALLPAPER"
+wal -i "$WALLPAPER"
+hyprctl reload
+killall waybar && waybar

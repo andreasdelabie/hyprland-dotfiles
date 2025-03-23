@@ -1,4 +1,6 @@
 @import url("file:///etc/xdg/waybar/style.css");
+@import url("colors-waybar.css");
+
 
 window#waybar {
   background-color: rgba(0, 0, 0, 0);
@@ -7,7 +9,7 @@ window#waybar {
 
 label.module {
   margin: 5px;
-  border: 2px solid rgba(255, 0, 255, 0.7);
+  border: 2px solid @color11;
   border-radius: 10px;
 }
 
