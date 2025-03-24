@@ -8,8 +8,8 @@ sleep 2s
 
 echo "[INSTALLING PACKAGES...]"
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ..
-sudo pacman -S ly hyprland waybar wofi gnome-terminal otf-font-awesome, pacman-contrib, fakeroot
-yay -S trizen, python-pywal16
+sudo pacman -S ly hyprland waybar wofi gnome-terminal pulseaudio otf-font-awesome pacman-contrib fakeroot
+yay -S trizen python-pywal16
 
 echo "[COPYING DOT FILES...]"
 mkdir -p $HOME/.config/

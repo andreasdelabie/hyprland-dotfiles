@@ -1,20 +1,34 @@
 @import url("file:///etc/xdg/waybar/style.css");
 @import url("colors-waybar.css");
 
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  font-size: 13px;
+  margin: 2px 2px 0 2px;
+}
 
 window#waybar {
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
 
-label.module {
-  margin: 5px;
-  border: 2px solid @color11;
-  border-radius: 10px;
+#workspaces button {
+  margin: 0;
+  padding: 0;
+  min-height: 21px;
+  min-width: 21px;
 }
 
-#workspaces button {
-  padding: 0;
+#workspaces button.active {
+  border: 2px solid @color11;
+  border-radius: 100%;
+}
+
+label.module {
+  border: 2px solid @color11;
+  border-radius: 10px;
 }
 
 #custom-updates {

@@ -1,26 +1,20 @@
 {
 	// Waybar config
         "layer": "top",
-        "modules-left": ["hyprland/workspaces", "hyprland/mode"],
+	"modules-left": ["hyprland/workspaces"],
         "modules-center": ["hyprland/window"],
         "modules-right": ["custom/updates", "cpu", "memory", "network", "pulseaudio", "clock"],
 	
 	// Modules config
 	"hyprland/workspaces": {
+		"format": "{name}",
 		"all-outputs": true,
-		"format": "{icon}",
-		"format-icons": {
-			"1": "1",
-			"2": "2",
-			"3": "3",
-			"4": "4",
-		},
 		"persistent-workspaces": {
 			"1": [],
 			"2": [],
 			"3": [],
-			"4": [],
-		},
+			"4": []
+		}
 	},
 	"custom/updates": {
 		"format": " {}",
